@@ -1,4 +1,4 @@
-package com.demo.ecommerce.domain.entities;
+package com.demo.ecommerce.domain.model.prices;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
@@ -8,7 +8,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
-import java.time.LocalDateTime;
 
 @Embeddable
 @Data

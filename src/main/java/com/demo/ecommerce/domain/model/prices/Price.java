@@ -1,4 +1,4 @@
-package com.demo.ecommerce.domain.entities;
+package com.demo.ecommerce.domain.model.prices;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
