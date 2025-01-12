@@ -24,7 +24,7 @@ public interface PriceController {
             @ApiResponse(responseCode = "404", description = "Price not found", content = @Content),
             @ApiResponse(responseCode = "500", description = "Internal Server Error", content = @Content)
     })
-    ResponseEntity<FinalPriceDto> getPriceDiscountedByDateRange(@Parameter(example = "2025-01-12T15:00:00.000") LocalDateTime applicationDate, @Parameter Integer productId,
+    ResponseEntity<FinalPriceDto> getProductPriceByDate(@Parameter(example = "2025-01-12T15:00:00.000") LocalDateTime applicationDate, @Parameter Integer productId,
                                                                 @Parameter Integer brandId);
 
 }
