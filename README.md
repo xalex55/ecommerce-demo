@@ -30,3 +30,5 @@ Swagger UI: La documentación de la API está disponible a través de Swagger UI
 4. Acceder a la consola H2:
    http://localhost:8080/ecommerce-api/h2-console (usuario: sa / contraseña: password)
 
+5. Ejecutar las llamadas http de la colección de postman adjuntada en ecommerce-demo.postman_collection.json, visualizar los resultados y el apartado de tests postman
+
