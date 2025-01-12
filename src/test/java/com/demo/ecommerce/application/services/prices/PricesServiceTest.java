@@ -87,6 +87,7 @@ class PricesServiceTest {
                 .priceStartDate(price2.getStartDate())
                 .priceEndDate(price2.getEndDate())
                 .finalPrice(price2.getPrice())
+                .currency(price2.getCurrency())
                 .build();
 
         when(pricesMapper.toFinalPriceDto(any())).thenReturn(finalPriceDto);

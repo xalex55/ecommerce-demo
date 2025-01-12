@@ -19,4 +19,6 @@ public class FinalPriceDto {
     LocalDateTime priceStartDate;
     LocalDateTime priceEndDate;
     Float finalPrice;
+    String currency;
+
 }

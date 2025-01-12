@@ -18,6 +18,7 @@ public class PricesMapper {
                 .priceStartDate(price.getStartDate())
                 .priceEndDate(price.getEndDate())
                 .finalPrice(price.getPrice())
+                .currency(price.getCurrency())
                 .build();
     }
 }

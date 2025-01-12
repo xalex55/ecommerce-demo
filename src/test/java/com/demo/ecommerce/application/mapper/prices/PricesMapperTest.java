@@ -39,12 +39,13 @@ class PricesMapperTest {
         FinalPriceDto result = pricesMapper.toFinalPriceDto(price);
 
         assertNotNull(result);
-        assertEquals(1, result.getProductId());
-        assertEquals(2, result.getBrandId());
-        assertEquals(3, result.getPriceList());
-        assertEquals(startDate, result.getPriceStartDate());
-        assertEquals(endDateDate, result.getPriceEndDate());
-        assertEquals(199.99f, result.getFinalPrice());
+        assertEquals(price.getId().getProductId(), result.getProductId());
+        assertEquals(price.getId().getBrandId(), result.getBrandId());
+        assertEquals(price.getId().getPriceList(), result.getPriceList());
+        assertEquals(price.getStartDate(), result.getPriceStartDate());
+        assertEquals(price.getEndDate(), result.getPriceEndDate());
+        assertEquals(price.getPrice(), result.getFinalPrice());
+        assertEquals("EUR", result.getCurrency());
     }
 
     @Test
